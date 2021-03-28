@@ -1,6 +1,6 @@
 # ExampleBot
 
-ExampleBot will take an input of an API method for any library and provide a volunteer-provided example with simple inputs and outputs to the user.
+A Discord bot that provides users in a Discord server with examples of API calls.
 
 ### Team Members
 
