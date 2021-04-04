@@ -3,6 +3,11 @@ const mysql = require('mysql');
 class MethodExample {
     input: string;
     output: string;
+
+    constructor(input : string, output: string) {
+        this.input = input;
+        this.output = output;
+    }
 }
 
 export default class DatabaseManager {
@@ -23,6 +28,6 @@ export default class DatabaseManager {
 
     retrieve(methodName : string, hostLibrary : string) : MethodExample {
         // TODO: implement
-        return
+        return new MethodExample("", "");
     }
 }
