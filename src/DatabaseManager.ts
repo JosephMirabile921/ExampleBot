@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-class MethodExample {
+export class MethodExample {
     input: string;
     output: string;
 
@@ -10,7 +10,7 @@ class MethodExample {
     }
 }
 
-export default class DatabaseManager {
+export class DatabaseManager {
     _pool : object;
 
     constructor(host : string, user : string, password : string, database : string) {
