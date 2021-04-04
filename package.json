@@ -1,0 +1,22 @@
+{
+  "name": "examplebot",
+  "version": "1.0.0",
+  "description": "A Discord bot that provides users in a Discord server with examples of API calls.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarlesCharkley75/ExampleBot.git"
+  },
+  "author": "BarlesCharkley75, carpenterd777, grinchpal, nebulouspianist, krixstin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarlesCharkley75/ExampleBot/issues"
+  },
+  "homepage": "https://github.com/BarlesCharkley75/ExampleBot#readme",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}
