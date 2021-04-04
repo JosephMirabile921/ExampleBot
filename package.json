@@ -4,7 +4,9 @@
   "description": "A Discord bot that provides users in a Discord server with examples of API calls.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node build/src/index.js"
   },
   "repository": {
     "type": "git",
