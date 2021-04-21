@@ -14,7 +14,8 @@ A Discord bot that provides users in a Discord server with examples of API calls
 
 ### Resources for Developers
 
-[discord.js docs](https://discord.js.org/#/docs/main/stable/general/welcome)
-[typescript docs](https://www.typescriptlang.org/docs/)
-[mysql docs](https://www.npmjs.com/package/mysql)
-[node docs](https://nodejs.org/en/docs/)
+- [discord.js docs](https://discord.js.org/#/docs/main/stable/general/welcome)
+- [typescript docs](https://www.typescriptlang.org/docs/)
+- [node docs](https://nodejs.org/en/docs/)
+- [stackoverflow_api](https://api.stackexchange.com/docs)
+- [mysql docs](https://www.npmjs.com/package/mysql)
