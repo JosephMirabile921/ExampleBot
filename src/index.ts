@@ -3,7 +3,12 @@ import { Client } from 'discord.js'
 
 const client: Client = new Discord.Client()
 
-if (!process.env.DISCORDTOKEN) {
+const prefix = '?'
+
+require('dotenv').config()
+
+
+if (!process.env.DISCORD_TOKEN) {
     console.error(
         'Your discord token is not set. Go to https://discord.com/developers/applications and create a token there.'
     )
@@ -22,5 +27,17 @@ client.on('ready', () => {
     console.log('Bot ready')
 })
 
+
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift()?.toLowerCase();
+
+    if(command === 'example'){
+        message.channel.send('Hello');
+    }
+});
+
 // https://discord.com/developers/applications
-client.login(process.env.DISCORDTOKEN)
+client.login(process.env.DISCORD_TOKEN)
