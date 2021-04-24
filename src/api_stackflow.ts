@@ -1,17 +1,14 @@
 const fetch = require("node-fetch"); 
 
-let method="";
-let library="";
-
-function get_stackflow(method, library){
+function get_stackflow(method: String, library: String){
 
     //data is sorted based on "votes"
-    api_url="https://api.stackexchange.com/2.2/questions?order=asc&sort=votes&tagged=api%3B" + method + "%3B" + library + "&site=stackoverflow"   
+    let api_url="https://api.stackexchange.com/2.2/questions?order=asc&sort=votes&tagged=api%3B" + method + "%3B" + library + "&site=stackoverflow"   
     console.log("\n" , "METHOD: ", method.toUpperCase() ,"\n", "LIBRARY:", library.toUpperCase(), "\n")
     
     getapi(api_url);
     
-    async function getapi(url){ 
+    async function getapi(url: String){ 
         
         const response =await fetch(url); //store fetch data in "response"
         var data = await response.json(); //store "response" in form of Json
