@@ -1,9 +1,7 @@
-//install npm i node-fetch --save
-
 const fetch = require("node-fetch"); 
 
-var method=""
-var library=""
+let method="";
+let library="";
 
 function get_stackflow(method, library){
 
@@ -18,14 +16,12 @@ function get_stackflow(method, library){
         const response =await fetch(url); //store fetch data in "response"
         var data = await response.json(); //store "response" in form of Json
 
-        // console.log(data); //see json file
-
         // it will print top 5 Q's title
         for (let i = 0; i < 5; i++){
-            var title = data.items[i].title;
+            let title = data.items[i].title;
             console.log("Title",i+1 ,": ", title)
         }
     }
 }
 
-get_stackflow("post","java");
+export default get_stackflow;
