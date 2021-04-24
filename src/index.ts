@@ -2,7 +2,7 @@ import Discord from 'discord.js'
 import { Client } from 'discord.js'
 
 const client: Client = new Discord.Client()
-const prefix = "?EXAMPLE"
+const prefix = '?EXAMPLE'
 
 if (!process.env.DISCORDTOKEN) {
     console.error(
@@ -23,13 +23,13 @@ client.on('ready', () => {
     console.log('Bot ready')
 })
 
-client.on('message', message => {
-	if(!message.content.startsWith(prefix) || message.author.bot) return;
+client.on('message', (message) => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return
 
-	const args = message.content.slice(prefix.length).split(/ +/);
+    const args = message.content.slice(prefix.length).split(/ +/)
 
-	console.log(args);
-	message.channel.send(args);
+    console.log(args)
+    message.channel.send(args)
 })
 
 // https://discord.com/developers/applications
