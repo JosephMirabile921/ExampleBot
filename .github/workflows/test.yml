@@ -27,6 +27,9 @@ jobs:
             - name: test
               working-directory: ${{ env.working-directory }}
               run: npm test
+            - name: formatting
+              working-directory: ${{ env.working-directory }}
+              run: npx prettier src/*.ts
             - name: build
               working-directory: ${{ env.working-directory }}
               run: npm run build
