@@ -2,6 +2,29 @@
 
 A Discord bot that provides users in a Discord server with examples of API calls.
 
+## Running the Tests
+
+To run the integration tests:
+
+1. Ensure you have `distest` installed.
+
+```
+pip install distest
+```
+2. The integration tester is a separate bot from the ExampleBot. Get its token and set the environment:
+
+On Windows:
+```
+setx TESTERTOKEN [token]
+```
+
+On Mac and Linux:
+```
+export TESTERTOKEN=[token]
+```
+
+3. Run `npm test`.
+
 ### Team Members
 
 - David Carpenter - [carpenterd777](https://github.com/carpenterd777)

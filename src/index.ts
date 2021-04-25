@@ -23,13 +23,16 @@ client.on('ready', () => {
     console.log('Bot ready')
 })
 
-client.on('message', (message) => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return
+client.on('message', message => {
+	if(!message.content.startsWith(prefix) && message.author.bot) return;
 
-    const args = message.content.slice(prefix.length).split(/ +/)
-
-    console.log(args)
-    message.channel.send(args)
+	const args = message.content.slice(prefix.length).split(/ +/);
+    console.log(args);
+if(args.length == 3){
+    message.channel.send(args);
+}else {
+    message.channel.send("ERROR: Message does not follow [methodName] [hostLibrary] pattern")
+    }
 })
 
 // https://discord.com/developers/applications
