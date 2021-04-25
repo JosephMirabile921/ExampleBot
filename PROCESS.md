@@ -27,6 +27,8 @@ Discovered tasks:
 - Send error message if no results are found ❌
 - Check only bot commands (beginning with ?EXAMPLE) for correct formatting ❌
 
+![project board](https://github.com/BarlesCharkley75/ExampleBot/blob/main/process/process_proj_board.png)
+
 
 ## Reflection
 
