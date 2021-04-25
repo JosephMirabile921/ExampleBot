@@ -4,7 +4,7 @@
   "description": "A Discord bot that provides users in a Discord server with examples of API calls.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "python3 src/tester.py -c ${CHANNEL:-835315320058150912} --run all ${BOT_ID:-835277663273746432} $TESTERTOKEN",
     "build": "npx tsc",
     "start": "npm run build && node build/src/index.js"
   },
