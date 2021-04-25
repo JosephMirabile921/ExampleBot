@@ -10,7 +10,7 @@ async function stackflow_answer(answer_id: number) {
 async function get_stackflow(method: string, library: string) {
     //data is sorted based on "votes"
     let api_url =
-        'https://api.stackexchange.com/2.2/questions?order=asc&sort=votes&tagged=api%3B' +
+        'https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&tagged=api%3B' +
         method +
         '%3B' +
         library +
