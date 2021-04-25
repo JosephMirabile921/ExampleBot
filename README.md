@@ -35,6 +35,8 @@ export TESTERTOKEN=[token]
 
 [Design Document](https://github.com/BarlesCharkley75/SSW345-Design-Workshop/blob/03882450f8c38a1560f01b3dd167a9b73a9db909/DESIGN.md)
 
+[Process Document](PROCESS.md)
+
 ### Resources for Developers
 
 - [discord.js docs](https://discord.js.org/#/docs/main/stable/general/welcome)
