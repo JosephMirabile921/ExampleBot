@@ -1,7 +1,6 @@
 const fetch = require('node-fetch')
 
 async function stackflow_answer(answer_id: number) {
-    // const api_url = `https://api.stackexchange.com/2.2/answers/${answer_id}?filter=withbody`;
     const api_url = `https://api.stackexchange.com/2.2/answers/${answer_id}?order=desc&sort=votes&site=stackoverflow&filter=withbody`
     const response = await fetch(api_url)
     const data = await response.json()
