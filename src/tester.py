@@ -13,6 +13,10 @@ async def test_silence(interface):
         )
     await interface.ensure_silence()
 
+@test_collector()
+async def test_sends_message(interface):
+    await interface.assert_reply_contains("?EXAMPLE routing flask", "flask")
+
 
 if __name__ == "__main__":
     run_dtest_bot(sys.argv, test_collector)
